@@ -10,7 +10,6 @@
   "bugs": {
     "url": "https://github.com/benderjs/benderjs-amd/issues"
   },
-  "homepage": "https://github.com/benderjs/benderjs-amd"
   "dependencies": {
     "requirejs": "~2.1.14",
     "lodash": "~2.4.1"
