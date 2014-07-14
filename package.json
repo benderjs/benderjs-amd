@@ -1,17 +1,29 @@
 {
-  "name": "benderjs-amd",
-  "version": "0.0.1",
-  "description": "Basic AMD support for Bender.js",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Maciej Gołaszewski",
-  "bugs": {
-    "url": "https://github.com/benderjs/benderjs-amd/issues"
-  },
-  "dependencies": {
-    "requirejs": "~2.1.14",
-    "lodash": "~2.4.1"
-  }
+	"name": "benderjs-amd",
+	"version": "0.0.1",
+	"description": "Basic AMD support for Bender.js",
+	"keywords": [
+		"bender",
+		"benderjs",
+		"requirejs",
+		"plugin",
+		"amd"
+	],
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "CKSource (http://cksource.com/)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/benderjs/benderjs-amd.git"
+	},
+	"bugs": {
+		"url": "https://github.com/benderjs/benderjs-amd/issues"
+	},
+	"dependencies": {
+		"requirejs": "~2.1.14",
+		"lodash": "~2.4.1"
+	}
 }
