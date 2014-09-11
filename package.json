@@ -11,7 +11,7 @@
 	],
 	"main": "lib/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"lint": "jscs . && jshint lib/"
 	},
 	"author": "CKSource (http://cksource.com/)",
 	"license": "MIT",
@@ -25,5 +25,9 @@
 	"dependencies": {
 		"requirejs": "~2.1.14",
 		"lodash": "~2.4.1"
+	},
+	"devDependencies": {
+		"jscs": "^1.6.1",
+		"jshint": "^2.5.5"
 	}
 }
