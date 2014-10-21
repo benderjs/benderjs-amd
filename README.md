@@ -29,14 +29,14 @@ var config = {
 module.exports = config;
 ```
 
-Add Require.js configuration in `bender-amd` field:
+Add Require.js configuration in `amd` field:
 
 ```javascript
 var config = {
     applications: {...},
 
     // add your Require.js configuration
-    'bender-amd': {
+    'amd': {
         baseUrl: 'foo/bar/',
         paths: {
             foo: 'baz/foo'
@@ -49,6 +49,23 @@ var config = {
 
     tests: {...}
 };
+```
+
+From now on the you can use `require` to load scripts to test:
+
+```javascript
+require( [ 'Some/Module/ToTest' ], function( ToTest ) {
+	"use strict";
+
+	describe( 'ToTest', function() {
+		it( 'should be tested with benderjs', function() {
+			var testObj = new ToTest();
+			expect( testObj.isRunning() ).to.be.true;
+			// ...
+		} );
+	} );
+
+} );
 ```
 
 License
