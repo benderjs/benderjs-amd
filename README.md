@@ -21,7 +21,7 @@ var config = {
 
     browsers: [...],
 
-    plugins: ['benderjs-amd'], // load the plugin
+    plugins: [ 'benderjs-amd' ], // load the plugin
 
     tests: {...}
 };
@@ -37,7 +37,7 @@ var config = {
 
     // add your Require.js configuration
     'amd': {
-        baseUrl: 'foo/bar/',
+        baseUrl: '/foo/bar/',
         paths: {
             foo: 'baz/foo'
         }
@@ -45,16 +45,16 @@ var config = {
 
     browsers: [...],
 
-    plugins: ['benderjs-amd'], // load the plugin
+    plugins: [ 'benderjs-amd' ], // load the plugin
 
     tests: {...}
 };
 ```
 
-From now on the you can use `require` to load scripts to test:
+From now on the you can use `bender.require` to load scripts to test:
 
 ```javascript
-require( [ 'Some/Module/ToTest' ], function( ToTest ) {
+bender.require( [ 'Some/Module/ToTest' ], function( ToTest ) {
 	"use strict";
 
 	describe( 'ToTest', function() {
